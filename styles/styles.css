@@ -8,16 +8,213 @@
 
 @font-face {
   font-family: "PT Sans";
-  font-style: normal;
+  font-style: bold;
   font-weight: 700;
   src: url("fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
 
+.visually-hidden {
+  visibility: hidden;
+}
+
 body {
   font-family: "PT Sans", sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+  color: #000000;
+  background-color: #ffffff;
+}
 
-  font-size: 16px;
-  line-height: 24px;
+.page-header {
+  color: #000000;
+  background-color: #ffffff;
+}
 
+.navigation-link {
+    color: #000000;
+    background-color: #ffffff;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    text-decoration-line: none;
+    text-align: center;
+}
+
+.main-index {
+  background-color:#ffffff;
+  background-image: url("../images/content/logo/index-background.jpg");
+  background-repeat: no-repeat;
+  background-size: 1200px 485px;
+}
+
+.slogan {
+  background-color: rgb(255, 255, 255);
+}
+
+.slogan-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.slogan-description {
+  color: #ffffff;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.advantages {
+  background-color: rgb(255, 255, 255);
+}
+
+.advantages-title {
+   font-size: 24px;
+   line-height: 28px;
+   font-weight: 700;
+   text-transform: uppercase;
+   text-align: center;
+}
+
+.advantages-description {
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+}
+
+.section-number {
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+}
+
+.advantages-item-darkblue {
+  background-color: #82B3D3;
+  color: white;
+}
+
+.advantages-item-lightblue {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item-white{
+background-color: #FFFFFF;
+}
+
+.advantages-item-blue {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.search {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.search-paragraph {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.search-button {
+  font-weight: 700;
+  font-size: 20px;
+  line-height:36px;
+  background-color: #756157;
+  color:white;
+  padding: 12px 15px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.search-button-position {
+  text-align: center;
+}
+
+.page-footer {
+  background-color: white;
+}
+.main-footer-background{
+  background-color: #000000;
+  background-image: url("../images/decor/background-blured.jpg");
+  background-repeat: no-repeat;
+  background-size: 1200px 411px;
+}
+
+.catalog-footer-background{
+  background-color: rgb(255, 255, 255);
+}
+
+.footer-title {
+  color:white;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.catalog-footer-title {
+  color:rgb(0, 0, 0);
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.footer-description {
+  color: white;
+  text-align: center;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.catalog-footer-description {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.footer-subscription-form {
+  text-align: center;
+}
+
+.catalog-footer-subscription-form {
+  text-align: center;
+}
+
+.button-youtube {
+  background-image: url(../images/decor/social/youtube-logo.svg);
+  background-repeat: no-repeat;
+}
+
+.button-vk {
+  background-image: url(../images/decor/social/vk-logo.svg);
+  background-repeat: no-repeat;
+}
+
+.button-telegram {
+  background-image: url(../images/decor/social/telegram-logo.svg);
+  background-repeat: no-repeat;
+}
+
+.footer-phone-number {
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #000000;
+  background-color: #FFFFFF;
 }
