@@ -117,8 +117,6 @@ background-color: #FFFFFF;
 }
 
 .search-paragraph {
-  font-size: 22px;
-  line-height: 26px;
   text-align: center;
   color: #000000;
 }
@@ -150,7 +148,7 @@ background-color: #FFFFFF;
 }
 
 .catalog-footer-background{
-  background-color: rgb(255, 255, 255);
+  background-color:#ffffff;
 }
 
 .footer-title {
@@ -174,15 +172,11 @@ background-color: #FFFFFF;
 .footer-description {
   color:#ffffff;
   text-align: center;
-  font-size: 22px;
-  line-height: 26px;
 }
 
 .catalog-footer-description {
   color:#000000;
   text-align: center;
-  font-size: 22px;
-  line-height: 26px;
 }
 
 .footer-subscription-form {
@@ -195,6 +189,8 @@ background-color: #FFFFFF;
   font-size: 18px;
   line-height: 21px;
   padding: 20px 491px 19px 22px;
+  border-color: rgba(0, 0, 0, 0);
+  border-radius: 5px;
 }
 
 .footer-subscription-form-submit {
@@ -205,10 +201,13 @@ background-color: #FFFFFF;
   font-weight: 700;
   text-transform: uppercase;
   padding: 12px 16px 12px 15px;
+  border-color: rgba(0, 0, 0, 0);
+  border-radius: 5px;
 }
 
 .catalog-footer-subscription-form {
   text-align: center;
+
 }
 
 .footer-social-list {
