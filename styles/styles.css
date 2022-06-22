@@ -118,10 +118,11 @@ body {
   text-align: center;
   text-transform: uppercase;
   margin: 0 290px 31px 290px;
+
 }
 
 .slogan-description {
-  margin: 31px 273px 90px 273px;
+  margin: 31px 272px 90px 272px;
   text-align: center;
 }
 
@@ -132,8 +133,12 @@ body {
 
 .advantages-item {
   display: flex;
-  height: 384px;
+  min-height: 384px;
   width: 400px;
+}
+.advantages-photo{
+  display:flex;
+  max-height: 384px;
 }
 .advantages-icon {
   width: 75px;
@@ -154,12 +159,12 @@ body {
 }
 
 .advantages-text-number-one{
-  width: 230px;
+  min-width: 230px;
   margin: 92px 85px 92px 85px;
 }
 
 .advantages-text-number-two{
-  width: 230px;
+  min-width: 230px;
   margin: 92px 85px 92px 85px;
 }
 
@@ -197,6 +202,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   text-align: center;
+  width: 230px;
 }
 
 .section-number {
