@@ -13,6 +13,10 @@
   src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
+* {
+  outline: 1px solid red;
+  outline-offset: -1px;
+}
 ---test---
 ul{
   list-style: none;
