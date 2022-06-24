@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="styles/styles.css">
     <title>HTML Academy: Седона</title>
   </head>
-  <body>
+  <body class="page-container">
   <header class="page-header">
     <nav class="navigation">
       <a class="navigation-logo" href="index.html">
@@ -41,7 +41,7 @@
     </ul>
    </nav>
   </header>
-  <main class="main-index">
+  <main class="main-container main-index">
     <h1 class="visually-hidden">Отель Седона</h1>
     <div class="main-background">
     <img class="welcome" src="images/content/Logo/welcome.svg" alt="Логотип Отеля Седона">
@@ -55,63 +55,82 @@
       <ol class="advantages-of-hotel-list">
         <li class="advantages-item">
           <div class="advantages-item-darkblue">
+            <div class="advantages-text-number-one">
            <h3 class="advantages-title">Настоящий<br>городок</h3>
            <p class="section-number">— №1 — </p>
            <p class="advantages-description">Седона — не аттракцион для<br>туристов, там течёт своя<br>жизнь</p>
-           <img src="images/Content/photo-of-hotel.jpg" alt="Фото Отеля">
+            </div>
           </div>
+          <div class="advantages-photo">
+           <img src="images/Content/photo-of-hotel.jpg" Width="800" Height="384" alt="Фото Отеля">
+          </div>
+        </li>
+           <li class="advantages-item">
         <div class="advantages-item-lightblue">
-          <img class="advantages-icon-house" src="../images/decor/advantages/house.svg" alt="Иконка дома">
-          <h3 class="advantages-title">Жильё</h3>
+          <div class="advantages-text-with-images">
+          <div class="advantages-icon advantages-icon-house"></div>
+          <h3 class="advantages-title-with-image">Жильё</h3>
           <p class="advantages-description">Рекомендуем пожить<br>в настоящем мотеле,<br>всё как в кино!</p>
+        </div>
           </div>
         <div class="advantages-item-white">
-          <img class="advantages-icon-burger" src="../images/decor/advantages/burger.svg" alt="Иконка бургера">
-          <h3 class="advantages-title">Еда</h3>
+          <div class="advantages-text-with-images">
+          <div class="advantages-icon advantages-icon-burger"></div>
+          <h3 class="advantages-title-with-image">Еда</h3>
           <p class="advantages-description">Всегда заказывайте<br>топовый фирменный бургер,<br>вы не разочаруетесь!</p>
           </div>
+          </div>
         <div class="advantages-item-lightblue">
-          <img class="advantages-icon-gift" src="../images/decor/advantages/gift.svg"  alt="Иконка подарка">
-          <h3 class="advantages-title">Сувениры</h3>
+          <div class="advantages-text-with-images">
+          <div class="advantages-icon advantages-icon-gift"></div>
+          <h3 class="advantages-title-with-image">Сувениры</h3>
           <p class="advantages-description">Не только китайского,<br>но и настоящего местного<br>производства!</p>
+        </div>
         </div>
         </li>
         <li class="advantages-item">
+          <div class="advantages-photo">
+            <img src="images/Content/photo-of-canion.jpg"  Width="800" Height="384" alt="Фото Каньона">
+          </div>
           <div class="advantages-item-darkblue">
-          <img src="images/Content/photo-of-canion.jpg" alt="Фото Каньона">
+            <div class="advantages-text-number-two">
           <h3 class="advantages-title">Там есть<br>мост дьявола</h3>
             <p class="section-number">— №2 — </p>
             <p class="advantages-description">Да, по нему можно пройти!<br>Если вы осмелитесь,<br>разумеется</p>
+            </div>
           </div>
         </li>
         <li class="advantages-item">
           <div class="advantages-item-lightblue">
+            <div class="advantages-text-without-images">
           <h3 class="advantages-title">Небольшая<br>площадь</h3>
             <p class="section-number">— №3 — </p>
             <p class="advantages-description">Все достопримечательности<br>находятся очень близко</p>
+            </div>
           </div>
-        </li>
-        <li class="advantages-item">
           <div class="advantages-item-blue">
+            <div class="advantages-text-without-images">
           <h3 class="advantages-title">Красивая<br>дорога</h3>
             <p class="section-number">— №4 — </p>
             <p class="advantages-description">Ехать в Седону из Лас-Вегаса<br>совсем не скучно!</p>
+            </div>
           </div>
-          <li class="advantages-item">
             <div class="advantages-item-lightblue">
+              <div class="advantages-text-without-images">
             <h3 class="advantages-title">Мало<br>туристов</h3>
               <p class="section-number">— №5 — </p>
               <p class="advantages-description">Большинство едет в Гранд<br>Каньон и толпится там</p>
+              </div>
             </div>
         </li>
       </ol>
     </section>
-    <section>
+    <section class="search-section">
       <h2 class="search">Заинтересовались?</h2>
       <p class="search-paragraph">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-      <div class="search-button-position">
-      <a class="search-button" href="#">Поиск гостиницы в седоне</a>
-      </div>
+    <button class="search-button">
+      <a class="search-button-link" href="#">Поиск гостиницы в седоне</a>
+    </button>
     </section>
     </main>
     <footer class="page-footer">
@@ -121,35 +140,35 @@
       <form class="footer-subscription-form">
         <input class="footer-subscription-form-input" type="email" value="Ваш e-mail"><input class="footer-subscription-form-submit" type="submit" value="Подписаться">
       </form>
-    </div>
-    <section class="footer-social"><span class="visually-hidden">Социальные сети</span>
-      <h2 class="visually-hidden">Контакты</h2>
-      <ul class="footer-social-list">
-        <li class="footer-social-item">
-         <a class="button-vk" href="https://vk.com/htmlacademy">
-          <span class="visually-hidden">Вконтакте</span>
-         </a>
-        </li>
-        <li class="footer-social-item">
-          <a class="button-telegram" href="https://t.me/htmlacademy">
-           <span class="visually-hidden">Telegram</span>
-          </a>
-        </li>
-        <li class="footer-social-item">
-          <a class="button-youtube" href="https://www.youtube.com/user/htmlacademyru">
-           <span class="visually-hidden">Youtube</span>
-          </a>
-        </li>
-        </ul>
-        <p class="footer-phone">
-          <a class="footer-phone-number" href="tel:+78128121212">+7 (812) 812-12-12</a>
-        </p>
-        <p class="footer-social-item">
-          <a class="button" href="https://htmlacademy.ru/">
-            <img src="images/content/HTML-Academy.svg" width="115" height="33" alt="Сайт HTML Academy">
-          </a>
-        </p>
-    </section>
-  </footer>
+      </div>
+        <section class="footer-social"><span class="visually-hidden">Социальные сети</span>
+          <h2 class="visually-hidden">Контакты</h2>
+          <div class="footer-social-list">
+            <div class="footer-social-item footer-social-button">
+              <a class="button-vk" href="https://vk.com/htmlacademy">
+                <span class="visually-hidden">Вконтакте</span>
+              </a>
+            </div>
+            <div class="footer-social-item footer-social-button">
+              <a class="button-telegram" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Telegram</span>
+            </a>
+            </div>
+            <div class="footer-social-item footer-social-button">
+              <a class="button-youtube" href="https://www.youtube.com/user/htmlacademyru">
+                <span class="visually-hidden">Youtube</span>
+              </a>
+            </div>
+          </div>
+              <p class="footer-phone">
+                <a class="footer-phone-number" href="tel:+78128121212">+7 (812) 812-12-12</a>
+              </p>
+              <p class="footer-social-item">
+                <a class="button" href="https://htmlacademy.ru/">
+                  <img src="images/content/HTML-Academy.svg" width="115" height="33" alt="Сайт HTML Academy">
+                </a>
+              </p>
+          </section>
+    </footer>
   </body>
 </html>
