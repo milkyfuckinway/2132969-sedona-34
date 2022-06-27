@@ -13,17 +13,20 @@
   src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
-* {
+
+ * {
   outline: 1px solid red;
   outline-offset: -1px;
 }
----test---
-ul{
+
+ul {
   list-style: none;
 }
-li{
+
+li {
   list-style: none;
 }
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -34,7 +37,7 @@ li{
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
----test---
+
 html {
   height: 100%;
   margin: 0 auto;
@@ -282,15 +285,20 @@ background-color: #FFFFFF;
   Width: 592px;
 }
 
-.search-button{
+.search-paragraph-second-line {
+  display: block;
+  text-align: left;
+}
+
+.search-button {
   background-color: #756157;
   border-radius: 5px;
   border: none;
   font-family: inherit;
   padding: 12px 15px;
-  display: block;
   margin: 0 auto;
   margin-bottom: 93px;
+  max-width: fit-content;
 }
 
 .search-button-link {
@@ -302,8 +310,9 @@ background-color: #FFFFFF;
   text-transform: uppercase;
   text-decoration: none;
   display: flex;
-  width: 544px;
+  min-width: 544px;
   justify-content: center;
+  text-align: center;
 }
 
 .main-footer-background {
@@ -426,6 +435,8 @@ background-color: #FFFFFF;
   line-height: 40px;
   margin: 0 auto;
   padding: 0;
+  display: flex;
+  align-items: center;
 }
 
 .footer-phone-number {
@@ -584,7 +595,7 @@ background-color: #FFFFFF;
   height: 48px;
   list-style: none;
   padding: 0;
-  margin: 0 0 0 0;
+  margin: 0;
   display: flex;
 }
 
@@ -630,8 +641,7 @@ background-color: #FFFFFF;
 }
 
 .result-of-search {
-  Width: 1056px;
-  Height: 876px;
+  min-Height: 876px;
   margin: 56px 71px 66px 73px;
   padding: 0;
   display: flex;
@@ -642,25 +652,31 @@ background-color: #FFFFFF;
 .product-card {
   width: 300px;
   min-height: 398px;
-  margin: 20px 18px 20px 20px;
+  padding: 20px;
+  margin-right: 18px;
 }
 
 .product-card:nth-child(3n) {
   margin-right: 0;
 }
 
+.product-card:nth-child(1n) {
+  margin-left: 0;
+}
+
 .product-card-image {
   padding: 0 0 16px 0;
   width: 100%;
   height: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .product-card-title {
-  margin: 0 auto;
   font-size: 24px;
   text-align: left;
   color: #000000;
-  margin: 0 20px 16px 20px;
+  margin: 0 20px 16px 0;
 }
 
 .product-card-link {
@@ -668,11 +684,19 @@ background-color: #FFFFFF;
   color: #000000;
   Width: 300px;
   Height: 28px;
-  margin: 0 auto;
-  padding: 0;
 }
 
-.product-about {
+.product-card-grid{
+  display: grid;
+  grid-template-columns: 140px 140px;
+  gap: 16px 20px;
+}
+
+.product-card-description-price {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 16px;
 }
 
 .product-card-description {
@@ -680,16 +704,13 @@ background-color: #FFFFFF;
   font-weight: 400;
   line-height: 21px;
   width: 140px;
-  margin: 0;
-  padding: 0 20px 16px 20px;
 }
 
 .product-card-price {
   font-size: 18px;
   font-weight: 400;
   line-height: 21px;
-  Width: 140px;
-  padding: 0 20px 16px 0;
+  width: 140px;
 }
 
 .product-card-button-more {
@@ -701,6 +722,8 @@ background-color: #FFFFFF;
   color:#ffffff;
   background-color: #756157;
   padding: 9px 15px 8px 15px;
+  text-align: center;
+  border-radius: 4px;
 }
 
 .product-card-button-favorite {
@@ -712,6 +735,8 @@ background-color: #FFFFFF;
   color:#ffffff;
   background-color:#82B3D3;
   padding: 9px 15px 8px 15px;
+  text-align: center;
+  border-radius: 4px;
 }
 
 .four-stars{
@@ -742,6 +767,7 @@ background-color: #FFFFFF;
   background-color:#F2F2F2;
   padding: 9px 22px 8px 23px;
   vertical-align: center;
+  border-radius: 4px;
 }
 
 .pagination-area {
@@ -749,28 +775,48 @@ background-color: #FFFFFF;
   height: 60px;
   display: flex;
   margin: 30px 71px 25px 73px;
+  justify-content: space-between;
 }
 
-.pagination {
+.pagination-area-settings {
   display: flex;
 }
 
+ul.pagination{
+  padding: 0;
+  margin: 0;
+}
+
+.pagination {
+  display: grid;
+  align-content: center;
+  grid-template-columns: 60px 60px 60px 60px 60px 60px;
+  column-gap: 8px;
+}
+
 .pagination-item {
+  width: 60px;
+  height: 60px;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
+  background-color: #82B3D3;
 }
 
 .pagination-current {
+  display: block;
+  width: 60px;
+  height: 60px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
   background-color:#F2F2F2;
 }
 
 .pagination-link {
-  background-color: #82B3D3;
   color: #ffffff;
   text-decoration: none;
-  padding: 12px;
-  margin: 0 8px 0 8px;
+  display: block;
 }
 
 .count-of-items {

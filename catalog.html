@@ -123,14 +123,16 @@
         <img class="product-card-image" src="images/content/Hotels/hotel-1.jpg" width="300" height="211" alt="Фотография отеля Amara Resort & Spa">
         <h3 class="product-card-title">Amara Resort & Spa</h3>
       </a>
-      <div class="product-about">
+        <div class="product-card-description-price">
         <b class="product-card-description">Гостиница</b>
         <b class="product-card-price">От 4000 ₽</b>
+        </div>
+        <div class="product-card-grid">
         <a class="product-card-button-more button" href="#">Подробнее</a>
         <a class="product-card-button-favorite button" href="#">В избранное</a>
         <div class="product-card-stars four-stars"></div>
         <span class="visually-hidden">4 звезды</span>
-        <a class="product-card-button-rating button">Рейтинг 8,5</a>
+        <a class="product-card-button-rating button">Рейтинг: 8,5</a>
       </div>
     </li>
     <li class="product-card">
@@ -138,45 +140,57 @@
         <img class="product-card-image" src="images/content/Hotels/hotel-2.jpg" width="300" height="211"  alt="Фотография отеля Villas at Poco Diablo">
         <h3 class="product-card-title">Villas at Poco Diablo</h3>
       </a>
+      <div class="product-card-description-price">
       <b class="product-card-description">Гостиница</b>
       <b class="product-card-price">От 5000 ₽</b>
+      </div>
+      <div class="product-card-grid">
       <a class="product-card-button-more button" href="#">Подробнее</a>
       <a class="product-card-button-favorite button" href="#">В избранное</a>
       <div class="product-card-stars four-stars"></div>
       <span class="visually-hidden">4 звезды</span>
       <a class="product-card-button-rating button">Рейтинг: 9,2</a>
+      </div>
     </li>
     <li class="product-card">
       <a class="product-card-link" href="product.html">
         <img class="product-card-image" src="images/content/Hotels/hotel-3.jpg" width="300" height="211" alt="Фотография отеля Desert Quail Inn">
         <h3 class="product-card-title">Desert Quail Inn</h3>
       </a>
+      <div class="product-card-description-price">
       <b class="product-card-description">Гостиница</b>
       <b class="product-card-price">От 2500 ₽</b>
+      </div>
+      <div class="product-card-grid">
       <a class="product-card-button-more button" href="#">Подробнее</a>
       <a class="product-card-button-favorite button" href="#">В избранное</a>
       <div class="product-card-stars three-stars"></div>
       <span class="visually-hidden">3 звезды</span>
       <a class="product-card-button-rating button">Рейтинг: 6,9</a>
+    </div>
     </li>
     <li class="product-card">
       <a class="product-card-link" href="product.html">
         <img class="product-card-image" src="images/content/Hotels/hotel-4.jpg" width="300" height="211" alt="Фотография отеля GreenTree Inn">
         <h3 class="product-card-title">GreenTree Inn</h3>
       </a>
+      <div class="product-card-description-price">
       <b class="product-card-description">Гостиница</b>
       <b class="product-card-price">От 1500 ₽</b>
+      </div>
+      <div class="product-card-grid">
       <a class="product-card-button-more button" href="#">Подробнее</a>
       <a class="product-card-button-favorite button" href="#">В избранное</a>
       <div class="product-card-stars two-stars"></div>
       <span class="visually-hidden">2 звезды</span>
       <a class="product-card-button-rating button">Рейтинг: 5,0</a>
+      </div>
     </li>
   </ul>
   <div class="pagination-area">
   <ul class="pagination">
     <li class="pagination-item">
-      <a class="pagination-link pagination-current">1</a>
+      <a class="pagination-current">1</a>
     </li>
     <li class="pagination-item">
       <a class="pagination-link" href="#">2</a>
@@ -195,9 +209,11 @@
       <a class="pagination-link" href="#">10</a>
     </li>
   </ul>
+  <div class="pagination-area-settings">
   <h3 class=count-of-items>Гостиниц на странице:</h3>
   <select name="count-of-items-shown">
     <option value="count-four">4</option>
+  </div>
   </select>
   </div>
   </main>
@@ -211,32 +227,34 @@
   </div>
   <section class="footer-social"><span class="visually-hidden">Социальные сети</span>
     <h2 class="visually-hidden">Контакты</h2>
-    <ul class="footer-social-list">
-      <li class="footer-social-item">
-       <a class="button-vk" href="https://vk.com/htmlacademy">
-        <span class="visually-hidden">Вконтакте</span>
-       </a>
-      </li>
-      <li class="footer-social-item">
+    <div class="footer-social-list">
+      <div class="footer-area">
+      <div class="footer-social-item footer-social-button">
+        <a class="button-vk" href="https://vk.com/htmlacademy">
+          <span class="visually-hidden">Вконтакте</span>
+        </a>
+      </div>
+      <div class="footer-social-item footer-social-button">
         <a class="button-telegram" href="https://t.me/htmlacademy">
-         <span class="visually-hidden">Telegram</span>
-        </a>
-      </li>
-      <li class="footer-social-item">
+        <span class="visually-hidden">Telegram</span>
+      </a>
+      </div>
+      <div class="footer-social-item footer-social-button">
         <a class="button-youtube" href="https://www.youtube.com/user/htmlacademyru">
-         <span class="visually-hidden">Youtube</span>
+          <span class="visually-hidden">Youtube</span>
         </a>
-      </li>
-      </ul>
+      </div>
+      </div>
       <p class="footer-phone">
         <a class="footer-phone-number" href="tel:+78128121212">+7 (812) 812-12-12</a>
       </p>
-      <p class="footer-social-item">
-        <a class="button" href="https://htmlacademy.ru/">
-          <img src="images/content/HTML-Academy.svg" width="115" height="33" alt="Сайт HTML Academy">
+      <div class="footer-social-item">
+        <a class="button-html-academy" href="https://t.me/htmlacademy">
+          <span class="visually-hidden">Html Academy</span>
         </a>
-      </p>
-  </section>
+      </div>
+      </div>
+    </section>
 </footer>
 </body>
 </html>
