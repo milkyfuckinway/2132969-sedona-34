@@ -183,11 +183,11 @@ body {
 }
 
 .advantages-icon-burger {
-  content: url(../images/decor/advantages/burger.svg)
+  content: url(../images/decor/advantages/burger.svg);
 }
 
 .advantages-icon-gift {
-  content: url(../images/decor/advantages/gift.svg)
+  content: url(../images/decor/advantages/gift.svg);
 }
 
 .advantages-text-number-one {
@@ -367,8 +367,7 @@ body {
 }
 
 .catalog-footer-description {
-  padding: 0 0 46px 0;
-  margin: 0 auto;
+  margin: 0 361px 46px 363px;
   color: var(--basic-black);
   text-align: center;
 }
@@ -424,22 +423,18 @@ body {
 }
 
 .footer-area {
-  display: grid;
-  grid-template-columns: 48px 48px 48px;
-  grid-template-rows: 40px;
-  align-items: center;
+  display: flex;
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
-.footer-social-button {
-  margin: 0 auto;
-}
-
-.footer-social-item {
-  padding: 0;
-  margin: 0;
+.footer-social-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 47px;
+  height: 40px;
 }
 
 .footer-phone {
@@ -474,25 +469,27 @@ body {
   text-decoration: none;
 }
 
-
 .button-html-academy {
   content: url(../images/decor/HTML-Academy.svg);
+  display: flex;
+  max-height: 50px;
   color: var(--basic-black);
   text-decoration: none;
 }
 
 .inner-header {
   width: 1060px;
-  min-height: 298px;
   padding: 35px 70px 70px 70px;
+  margin: auto auto 5px auto;
   background-color: var(--basic-dark-blue);
   background-image: url(../images/decor/background-filter.jpg);
   background-repeat: no-repeat;
   color: var(--basic-white);
 }
 
+
 .inner-header-title {
-  margin: 0 auto;
+  margin: 0 auto 10px auto;
   font-size: 60px;
   font-weight: 700;
   line-height: 78px;
@@ -500,48 +497,72 @@ body {
 
 .breadcrumbs {
   display: flex;
+  height: 21px;
   padding: 0;
-  margin: 10px 0 0 0;
+  margin: 0 0 40px 2px;
   list-style: none;
 }
 
 .breadcrumbs-item-home {
   content: url(../images/decor/breadcrumbs/breadcrumbs-home.svg);
-  padding: 5px 10px 5px 0;
+  padding: 0;
   color: var(--basic-white);
   text-decoration: none;
 }
 
 .breadcrumbs-link {
-  padding: 0 10px 0 10px;
+  padding: 0;
   color: inherit;
   font-size: 16px;
   line-height: 21px;
 }
 
 .catalog-filter-title {
+  margin: 0 0 30px 0;
   font-size: 20px;
   font-weight: 700;
   line-height: 26px;
 }
 
+.control-input {
+  width: 20px;
+  height: 20px;
+}
+
 .catalog-filter-form {
   display: flex;
+  justify-content: space-between;
   width: 1060px;
-  height: 149px;
-  margin: 40px 0 0 0;
+  min-height: 149px;
+  margin: 0 auto;
 }
 
 .catalog-filter-form-left {
   display: flex;
-  width: 366px;
-  height: 149px;
+  justify-content: space-between;
+  min-width: 366px;
+  min-height: 149px;
+  margin: 0;
+}
+
+.catalog-filter-group-infrastructure {
+  min-width: 150px;
+  padding: 0;
+  border: none;
+  margin: 0;
+}
+
+.catalog-filter-group-type {
+  min-width: 146px;
+  padding: 0;
+  border: none;
+  margin: 0;
 }
 
 .catalog-filter-form-right {
+  display: flex;
   width: 519px;
-  height: 148px;
-  margin: 0 0 0 176px;
+  min-height: 148px;
 }
 
 .catalog-filter-buttons {
@@ -579,7 +600,7 @@ body {
   Width: 1057px;
   min-Height: 49px;
   display: flex;
-  margin: 50px 71px 56px 72px;
+  margin: 55px 71px 56px 72px;
 }
 
 .search-result-title {
@@ -692,6 +713,7 @@ body {
   margin: 0 20px 16px 0;
   color: var(--basic-black);
   font-size: 24px;
+  line-height: 28px;
   text-align: left;
 }
 
@@ -799,14 +821,19 @@ body {
   border-radius: 4px;
 }
 
+.pagination-divider {
+  display: flex;
+  width: 1055px;
+  border-bottom: 1px solid #e6e6e6;
+  margin: 0 auto 30px auto;
+}
+
 .pagination-area {
   display: flex;
   justify-content: space-between;
   width: 1056px;
   height: 60px;
-  margin: 0 auto;
-  margin-top: 30px;
-  margin-bottom: 25px;
+  margin: 0 71px 25px 73px;
 }
 
 .pagination-area-settings {
