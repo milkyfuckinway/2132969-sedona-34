@@ -244,18 +244,6 @@ body {
   text-align: center;
 }
 
-.advantages-item-lightblue {
-  background-color: var(--basic-light-blue);
-}
-
-.advantages-item-white {
-  background-color: var(--basic-white)
-}
-
-.advantages-item-blue {
-  background-color: var(--basic-blue);
-}
-
 .search {
   margin: 0 auto;
   margin-bottom: 29px;
