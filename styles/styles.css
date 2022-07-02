@@ -126,6 +126,16 @@ body {
   line-height: 26px;
   text-align: center;
   text-decoration-line: none;
+  position: relative;
+}
+
+.navigation-link:hover {
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+  left: 20px;
+  height: 4px;
+  background-color: red;
 }
 
 .navigation-link-user {
