@@ -148,12 +148,12 @@ body {
 }
 
 .navigation-link:focus {
-  color:: #756157;
+  color: #756157;
   outline: none;
 }
 
 .navigation-link:active {
-  color:: rgba(117, 97, 87, 0.3);
+  color: rgba(117, 97, 87, 0.3);
 }
 
 .navigation-link-user:hover {
@@ -162,16 +162,14 @@ body {
 }
 
 .navigation-link-user:focus {
-  color:: #756157;
+  color: #756157;
   fill: #756157;
   outline: none;
 }
 
 .navigation-link-user:active {
-  color:: rgba(117, 97, 87, 0.3);
+  color: rgba(117, 97, 87, 0.3);
 }
-
-/*  */
 
 .navigation-user-icon {
   top: 0;
@@ -221,7 +219,6 @@ body {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  vertical-align: middle;
   border-radius: 4px;
 }
 
@@ -417,7 +414,6 @@ body {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  vertical-align: middle;
 }
 
 .search-button:hover {
