@@ -129,14 +129,16 @@ body {
   position: relative;
 }
 
-.navigation-link:hover {
+.navigation-link-current::before {
   position: absolute;
-  right: 20px;
-  bottom: 0;
-  left: 20px;
-  height: 4px;
-  background-color: red;
+  right: 17px;
+  bottom: -1px;
+  left: 17px;
+  height: 2px;
+  background-color: var(--basic-brown);
+  content: "";
 }
+
 
 .navigation-link-user {
   display: block;
