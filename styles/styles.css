@@ -37,21 +37,19 @@
   --basic-very-dark-gray: #333333;
   --basic-transparent: rgba(0, 0, 0, 0);
   /* buttons */
+  --basic-button-disabled:#E5E5E5;
   --basic-button-brown:#756157;
   --basic-button-brown-hover:#615048;
   --basic-button-brown-focus:#615048;
   --basic-button-brown-active:#756157;
-  --basic-button-brown-inactive:#E5E5E5;
   --basic-button-blue:#82B3D3;
   --basic-button-blue-hover:#68A2CA;
   --basic-button-blue-focus:#68A2CA;
   --basic-button-blue-active:#82B3D3;
-  --basic-button-blue-inactive:#E5E5E5;
   --basic-button-green:#7DB54F;
   --basic-button-green-hover:#6C9E42;
   --basic-button-green-focus:#6C9E42;
   --basic-button-green-active:#7DB54F;
-  --basic-button-green-inactive:#E5E5E5;
 }
 
 /* Скрытые элементы */
@@ -128,18 +126,6 @@ body {
   list-style: none;
 }
 
-.navigation-user .navigation-item:nth-child(1) .navigation-link-user{
-  background-image: url(../images/decor/search.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.navigation-user .navigation-item:nth-child(2) .navigation-link-user{
-  background-image: url(../images/decor/favorite.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
 .navigation-link {
   position: relative;
   display: block;
@@ -155,6 +141,45 @@ body {
   text-decoration-line: none;
 }
 
+/* Навигация Состояния  */
+
+.navigation-link:hover {
+  color: #756157;
+}
+
+.navigation-link:focus {
+  color:: #756157;
+  outline: none;
+}
+
+.navigation-link:active {
+  color:: rgba(117, 97, 87, 0.3);
+}
+
+.navigation-link-user:hover {
+  color: #756157;
+  fill: #756157;
+}
+
+.navigation-link-user:focus {
+  color:: #756157;
+  fill: #756157;
+  outline: none;
+}
+
+.navigation-link-user:active {
+  color:: rgba(117, 97, 87, 0.3);
+}
+
+/*  */
+
+.navigation-user-icon {
+  top: 0;
+  right: 0;
+  display: block;
+  margin: 0 auto;
+}
+
 .navigation-link-current::before {
   content: "";
   position: absolute;
@@ -168,8 +193,8 @@ body {
 
 .navigation-link-user {
   display: block;
-  min-width: 18px;
-  min-height: 18px;
+  width: 19px;
+  height: 19px;
   padding: 24px 12px 23px 12px;
   margin: 0;
   color: var(--basic-black);
@@ -178,6 +203,7 @@ body {
   line-height: 26px;
   text-align: center;
   text-decoration-line: none;
+  position: relative;
 }
 
 /* Кнопка "Хочу сюда!" */
@@ -557,6 +583,16 @@ body {
   color:rgba(255, 255, 255, 0.6);
 }
 
+.breadcrumbs-link:focus {
+  outline: none;
+}
+
+.breadcrumbs-link:active {
+  outline: none;
+  color: rgba(255, 255, 255, 0.3);
+  fill: rgba(255, 255, 255, 0.3);
+}
+
 .breadcrumbs-item {
   position: relative;
   margin-right: 25px;
@@ -729,6 +765,7 @@ body {
 
 .control-button-link:focus {
   border-color: #68A2CA;
+  outline: none;
 }
 
 .control-button-link:active {
