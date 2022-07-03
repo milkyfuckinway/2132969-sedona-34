@@ -532,6 +532,7 @@ body {
 
 .breadcrumbs {
   display: flex;
+  flex-wrap: wrap;
   padding: 0;
   margin: 0 auto;
   margin-left: 2px;
@@ -542,7 +543,7 @@ body {
 
 .breadcrumbs-link {
   position: relative;
-  display: block;
+  display: flex;
   color: inherit;
   font-size: 16px;
   line-height: 21px;
@@ -559,6 +560,10 @@ body {
 .breadcrumbs-item {
   position: relative;
   margin-right: 25px;
+}
+
+.breadcrumbs-icon-home {
+  margin: 4px 0;
 }
 
 .breadcrumbs-item:last-child {
@@ -1015,10 +1020,7 @@ ul.pagination {
   font-size: 18px;
   font-weight: 400;
   line-height: 21px;
-}
-
-.count-of-items-shown {
-  display: flex;
+  min-width: 386px;
 }
 
 /* Контакты подвала */
