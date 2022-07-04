@@ -658,6 +658,7 @@ body {
   font-size: 20px;
   font-weight: 700;
   line-height: 26px;
+  padding: 0;
 }
 
 .control-input {
@@ -772,7 +773,7 @@ body {
   height: 44px;
   background-color: transparent;
   border: 2px solid var(--basic-white);
-  padding: 0 16px;
+  padding: 0;
   color: var(--basic-white);
   font-family: inherit;
   font-size: 18px;
@@ -781,11 +782,13 @@ body {
 
 .range-input-left {
   border-radius: 5px 0 0 5px;
+  padding: 0 14px 0 18px;
 }
 
 .range-input-right {
   border-radius: 0 5px 5px 0;
   margin-left: -2px;
+  padding: 0 18px 0 14px;
 }
 
 .range-wrapper-inputs {
