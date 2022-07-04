@@ -204,6 +204,23 @@ body {
   position: relative;
 }
 
+.navigation-link-user-favorite-count {
+  position: absolute;
+  right: -2px;
+  top: 15px;
+  width: 20px;
+  height: 20px;
+  background-color: var(--basic-button-green);
+  color: var(--basic-white);
+  font-size: 10px;
+  line-height: 13px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: -0.1em;
+}
+
 /* Кнопка "Хочу сюда!" */
 
 .navigation-want-here-button {
@@ -235,6 +252,10 @@ body {
   background-color: var(--basic-button-brown-active);
 }
 
+.navigation-want-here-button:disabled {
+  background-color: var(--basic-button-disabled);
+}
+
 /* Основной контейнер */
 
 .main-container {
@@ -244,8 +265,16 @@ body {
 .main-background {
   background-color: var(--basic-background-2);
   background-image: url("../images/content/logo/index-background.jpg");
-  background-size: 1200px 485px;
+  background-size: 1200px;
   background-repeat: no-repeat;
+  position: relative;
+}
+
+.main-background::after {
+    content: url("../images/decor/divider.svg");
+    width: 1200px;
+    position: absolute;
+    bottom: -5px;
 }
 
 .welcome {
@@ -429,6 +458,10 @@ body {
   background-color: var(--basic-button-brown-active);
 }
 
+.search-button:disabled {
+  background-color: var(--basic-button-disabled);
+}
+
 .main-footer-background {
   width: 1200px;
   min-height: 411px;
@@ -526,6 +559,10 @@ body {
 
 .footer-subscription-form-submit:active {
   background-color: var(--basic-button-blue-active);
+}
+
+.footer-subscription-form-submit:disabled {
+  background-color: var(--basic-button-disabled);
 }
 
 /* Фнутрений Header */
