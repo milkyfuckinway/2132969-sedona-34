@@ -14,11 +14,11 @@
   font-display: swap;
 }
 
-/*
+
 * {
   outline: 0.25px solid var(--basic-red);
   outline-offset: -1px;
-} */
+}
 
 /* Цвета */
 :root {
@@ -669,8 +669,7 @@ body {
 .catalog-filter-form {
   display: flex;
   justify-content: space-between;
-  width: 1060px;
-  min-height: 149px;
+  min-height: 148px;
   margin: 0 auto;
   color: var(--basic-white);
 }
@@ -678,8 +677,6 @@ body {
 .catalog-filter-form-left {
   display: flex;
   justify-content: space-between;
-  min-width: 366px;
-  min-height: 149px;
   margin: 0;
 }
 
@@ -702,14 +699,10 @@ body {
   line-height: 21px;
 }
 
-/* Стоимость */
-
 .catalog-filter-form-right {
   padding: 0;
   margin: 0;
   border: none;
-  width: 519px;
-  min-height: 148px;
   position: relative;
   display: flex;
 }
@@ -809,16 +802,24 @@ body {
 /* Кнопки формы Применить Сбросить*/
 
 .catalog-filter-buttons {
-  margin: 0 0 0 70px;
+  height: 88px;
+  width: 160px;
+  margin: 60px 0 0 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .button-filter-submit {
-  padding: 14px 15px 14px 15px;
+  padding: 14px 15px;
   border: none;
   background-color: var(--basic-background-2);
   color: var(--basic-white);
   font-family: inherit;
+  min-width: 160px;
+  font-size: 16px;
   font-weight: 700;
+  line-height: 20px;
   text-transform: uppercase;
   border-radius: 5px;
 }
@@ -830,6 +831,8 @@ body {
   font-family: inherit;
   font-size: 16px;
   line-height: 20px;
+  font-weight: 400;
+  padding: 0;
 }
 
 /* Результат поиска */
