@@ -14,11 +14,11 @@
   font-display: swap;
 }
 
-
+/*
 * {
   outline: 0.25px solid var(--basic-red);
   outline-offset: -1px;
-}
+} */
 
 /* Цвета */
 :root {
@@ -712,8 +712,7 @@ body {
   height: 4px;
   margin-bottom: 8px;
   background-color: rgba(255, 255, 255, 0.3);
-  border-radius: 2px;
-  width: 277px;
+  width: 288px;
 }
 
 .range-bar {
@@ -759,6 +758,11 @@ body {
 .range-input::-webkit-inner-spin-button {
   appearance: none;
   margin: 0;
+  -moz-appearance: none;
+}
+
+.range-input[type=number] {
+  -moz-appearance: textfield;
 }
 
 .range-input {
@@ -774,14 +778,22 @@ body {
 }
 
 .range-input-left {
-  border-radius: 5px 0 0 5px;
-  padding: 0 14px 0 18px;
+  border-radius: 4px 0 0 4px;
+  padding: 0 16px;
 }
 
 .range-input-right {
-  border-radius: 0 5px 5px 0;
+  border-radius: 0 4px 4px 0;
   margin-left: -2px;
-  padding: 0 18px 0 14px;
+  padding: 0 16px;
+}
+
+.range-input-decor-text {
+  position: absolute;
+  transform: translate(-35px, 14px);
+  font-size: 18px;
+  line-height: 21px;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .range-wrapper-inputs {
@@ -793,10 +805,10 @@ body {
 }
 
 .left-side {
-  margin-top: 4px;
   display: flex;
+  margin-top: 2px;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-between;
 }
 
 /* Кнопки формы Применить Сбросить*/
