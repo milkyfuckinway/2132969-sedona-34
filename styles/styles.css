@@ -94,9 +94,9 @@ body {
 
 .navigation {
   display: flex;
+  justify-content: space-between;
   width: 1200px;
   margin: 0 auto;
-  justify-content: space-between;
 }
 
 .navigation-logo {
@@ -190,6 +190,7 @@ body {
 
 
 .navigation-link-user {
+  position: relative;
   display: block;
   width: 19px;
   height: 19px;
@@ -201,24 +202,23 @@ body {
   line-height: 26px;
   text-align: center;
   text-decoration-line: none;
-  position: relative;
 }
 
 .navigation-link-user-favorite-count {
   position: absolute;
-  right: -2px;
   top: 15px;
+  right: -2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 20px;
   height: 20px;
   background-color: var(--basic-button-green);
   color: var(--basic-white);
   font-size: 10px;
   line-height: 13px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   letter-spacing: -0.1em;
+  border-radius: 50%;
 }
 
 /* Кнопка "Хочу сюда!" */
@@ -263,18 +263,18 @@ body {
 }
 
 .main-background {
+  position: relative;
   background-color: var(--basic-background-2);
   background-image: url("../images/content/logo/index-background.jpg");
   background-size: 1200px;
   background-repeat: no-repeat;
-  position: relative;
 }
 
 .main-background::after {
-    content: url("../images/decor/divider.svg");
-    width: 1200px;
-    position: absolute;
-    bottom: -5px;
+  content: url("../images/decor/divider.svg");
+  position: absolute;
+  bottom: -5px;
+  width: 1200px;
 }
 
 .welcome {
@@ -432,10 +432,9 @@ body {
 
 .search-button {
   display: block;
-  margin: 0 313px 93px 313px;
   padding: 12px 15px;
+  margin: 0 313px 93px 313px;
   background-color: var(--basic-brown);
-  border-radius: 4px;
   color: var(--basic-white);
   font-size: 20px;
   font-weight: 700;
@@ -443,6 +442,7 @@ body {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+  border-radius: 4px;
 }
 
 .search-button:hover {
@@ -1086,11 +1086,11 @@ ul.pagination {
 /* Гостиниц на странице */
 
 .count-of-items {
+  min-width: 386px;
   color: var(--basic-very-dark-gray);
   font-size: 18px;
   font-weight: 400;
   line-height: 21px;
-  min-width: 386px;
 }
 
 /* Контакты подвала */
