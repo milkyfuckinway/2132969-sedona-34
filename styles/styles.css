@@ -761,6 +761,36 @@ body {
   top:-8px;
   right: -10px;
 }
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.range-input {
+  width: 144px;
+  height: 48px;
+  background-color: transparent;
+  border: 2px solid var(--basic-white);
+  color: var(--basic-white);
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.range-input-left {
+  border-radius: 5px;
+}
+
+.range-input-right {
+  border-radius: 5px;
+}
+
+.range-wrapper-inputs {
+  display: flex;
+}
+
 /* Кнопки формы Применить Сбросить*/
 
 .button-filter-submit {
