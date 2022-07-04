@@ -627,7 +627,7 @@ body {
   display: block;
   width: 6px;
   height: 9px;
-  background-image: url(../images/decor/Vector.svg);
+  background-image: url(../images/decor/vector.svg);
 }
 
 .catalog-filter-title {
@@ -638,9 +638,32 @@ body {
   line-height: 26px;
 }
 
-.control-input {
-  width: 20px;
-  height: 20px;
+.control-input[type="checkbox"]:checked + .control-mark::before {
+  position: absolute;
+  content: "";
+  padding: 6px 4px 4px 4px;
+  width: 12px;
+  height: 10px;
+  background-image: url(../images/decor/mark.svg);
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-position: center;
+  display: block;
+}
+
+.control-input[type="radio"] + .control-mark {
+  border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  background-color: #3F5E72;
+  border-radius: 50%;
+  content: "";
 }
 
 .catalog-filter-form {
