@@ -708,6 +708,9 @@ body {
   margin: 0;
   /* border: none; */
   width: 519px;
+  min-height: 148px;
+  position: relative;
+  display: flex;
 }
 
 .range-scale {
@@ -747,10 +750,6 @@ body {
   border: 2px solid #83B3D3;
 }
 
-.catalog-filter-buttons {
-  width: 161px;
-  height: 88px;
-}
 
 .toggle-min {
   top:-8px;
@@ -788,10 +787,25 @@ body {
 }
 
 .range-wrapper-inputs {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
   display: flex;
+  justify-content: center;
+}
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 /* Кнопки формы Применить Сбросить*/
+
+.catalog-filter-buttons {
+  width: 161px;
+  height: 88px;
+}
 
 .button-filter-submit {
   padding: 14px 15px 14px 15px;
