@@ -714,8 +714,37 @@ body {
   position: relative;
   height: 4px;
   margin-bottom: 8px;
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.3);
   border-radius: 2px;
+  width: 277px;
+}
+
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: #FFFFFF;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #FFFFFF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+}
+
+.range-toggle:focus {
+  outline: none;
+  border: 3px solid #83b3d3;
+}
+
+.range-toggle:active {
+  border: 2px solid #83B3D3;
 }
 
 .catalog-filter-buttons {
@@ -723,6 +752,15 @@ body {
   height: 88px;
 }
 
+.toggle-min {
+  top:-8px;
+  left: -10px;
+}
+
+.toggle-max {
+  top:-8px;
+  right: -10px;
+}
 /* Кнопки формы Применить Сбросить*/
 
 .button-filter-submit {
