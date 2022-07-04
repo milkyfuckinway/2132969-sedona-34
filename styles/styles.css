@@ -685,14 +685,14 @@ body {
 .catalog-filter-group-infrastructure {
   min-width: 150px;
   padding: 0;
-  /* border: none; */
+  border: none;
   margin: 0;
 }
 
 .catalog-filter-group-type {
   min-width: 146px;
   padding: 0;
-  /* border: none; */
+  border: none;
   margin: 0;
 }
 
@@ -706,7 +706,7 @@ body {
 .catalog-filter-form-right {
   padding: 0;
   margin: 0;
-  /* border: none; */
+  border: none;
   width: 519px;
   min-height: 148px;
   position: relative;
@@ -768,10 +768,11 @@ body {
 }
 
 .range-input {
-  width: 144px;
-  height: 48px;
+  width: 110px;
+  height: 44px;
   background-color: transparent;
   border: 2px solid var(--basic-white);
+  padding: 0 16px;
   color: var(--basic-white);
   font-family: inherit;
   font-size: 18px;
@@ -779,11 +780,12 @@ body {
 }
 
 .range-input-left {
-  border-radius: 5px;
+  border-radius: 5px 0 0 5px;
 }
 
 .range-input-right {
-  border-radius: 5px;
+  border-radius: 0 5px 5px 0;
+  margin-left: -2px;
 }
 
 .range-wrapper-inputs {
@@ -795,6 +797,7 @@ body {
 }
 
 .left-side {
+  margin-top: 4px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -803,8 +806,7 @@ body {
 /* Кнопки формы Применить Сбросить*/
 
 .catalog-filter-buttons {
-  width: 161px;
-  height: 88px;
+  margin: 0 0 0 70px;
 }
 
 .button-filter-submit {
