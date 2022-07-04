@@ -173,8 +173,8 @@ body {
 
 .navigation-link-current::before {
   content: "";
-  z-index: 100;
   position: absolute;
+  z-index: 100;
   right: 17px;
   bottom: -1px;
   left: 17px;
@@ -639,16 +639,16 @@ body {
 }
 
 .control-input[type="checkbox"]:checked + .control-mark::before {
-  position: absolute;
   content: "";
-  padding: 6px 4px 4px 4px;
+  position: absolute;
+  display: block;
   width: 12px;
   height: 10px;
-  background-image: url(../images/decor/mark.svg);
-  background-repeat: no-repeat;
+  padding: 6px 4px 4px 4px;
   background-color: transparent;
+  background-image: url(../images/decor/mark.svg);
   background-position: center;
-  display: block;
+  background-repeat: no-repeat;
 }
 
 .control-input[type="radio"] + .control-mark {
@@ -656,6 +656,7 @@ body {
 }
 
 .control-input[type="radio"]:checked + .control-mark::before {
+  content: "";
   position: absolute;
   top: 5px;
   left: 5px;
@@ -663,13 +664,12 @@ body {
   height: 10px;
   background-color: #3F5E72;
   border-radius: 50%;
-  content: "";
 }
 
 .catalog-filter-form {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: space-between;
   min-height: 148px;
   margin: 0 auto;
   color: var(--basic-white);
@@ -678,8 +678,8 @@ body {
 .catalog-filter-form-left {
   display: flex;
   justify-content: space-between;
-  margin: 0;
   width: 366px;
+  margin: 0;
 }
 
 .catalog-filter-group-infrastructure {
@@ -701,11 +701,11 @@ body {
 }
 
 .control {
+  position: relative;
   margin-bottom: 15px;
   margin-left: 40px;
   font-size: 18px;
   line-height: 21px;
-  position: relative;
 }
 
 .control:last-child {
@@ -714,11 +714,11 @@ body {
 
 .control-mark {
   position: absolute;
-  transform: translate(-200%);
-  margin-left: 1px;
   width: 20px;
   height: 20px;
+  margin-left: 1px;
   background-color: #ffffff;
+  transform: translate(-200%);
   border-radius: 4px;
 }
 
@@ -902,13 +902,18 @@ body {
 }
 
 .select-control {
-  margin: 0 78px 0 0;
-  color: var(--basic-very-dark-gray);
-  font-size: 18px;
-  line-height: 21px;
-  Width: 290px;
+  padding: 12px 104px 12px 18px;
+  margin-right: 78px;
+  background-color: #ffffff;
+  border: 2px solid #E5E5E5;
   border-radius: 4px;
-  Height: 49px;
+  background-image: url(../images/decor/vector-black.svg);
+  background-repeat: no-repeat;
+  background-position: right 18px center;
+  font-family: inherit;
+  font-size: 18px;
+  line-height:21px;
+  appearance: none;
 }
 
 .search-control {
