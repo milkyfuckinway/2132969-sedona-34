@@ -15,10 +15,10 @@
 }
 
 
-* {
+/* * {
   outline: 0.25px solid var(--basic-red);
   outline-offset: -1px;
-}
+} */
 
 :root {
   --basic-background-1:#FFFFFF;
@@ -1264,10 +1264,10 @@ body {
 .pagination-area-settings {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   min-width: 386px;
   padding: 0;
   margin: 0;
-  align-items: center;
 }
 
 ul.pagination {
@@ -1350,6 +1350,9 @@ ul.pagination {
   padding: 12px 128px 12px 18px;
   border: 2px solid #E5E5E5;
   background-color: var(--basic-background-1);
+  background-image: url(../images/decor/vector-black.svg);
+  background-position: center right 18px;
+  background-repeat: no-repeat;
   color: var(--basic-very-dark-gray);
   font-family: inherit;
   font-size: 18px;
@@ -1357,9 +1360,6 @@ ul.pagination {
   line-height: 21px;
   appearance: none;
   border-radius: 4px;
-  background-image: url(../images/decor/vector-black.svg);
-  background-repeat: no-repeat;
-  background-position: center right 18px;
 }
 
 .count-of-items-shown:hover {
@@ -1472,44 +1472,46 @@ ul.pagination {
 
 .modal-container {
   position: fixed;
+  z-index: 101;
   top: 0;
   left: 0;
   display: flex;
   width: 100%;
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
-  z-index: 101;
 }
 
 .modal {
   position: relative;
+  width: 575px;
+  padding: 62px 70px 70px 70px;
   margin: auto;
   background-color: var(--basic-background-1);
-  padding: 62px 70px 70px 70px;
+  border-radius: 50px;
 }
 
 .modal-title {
-  font-size: 30px;
-  text-transform: uppercase;
-  line-height: 36px;
+  max-width: 500px;
   margin: 0;
   margin-bottom: 63px;
-  max-width: 500px;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
 }
 
 .modal-close-button {
   position: absolute;
-  padding: 0;
   top: 0;
   right: 0;
   width: 53px;
   height: 53px;
-  border-radius: 50%;
-  background-color: #F2F2F2;
+  padding: 0;
   border: none;
+  background-color: #F2F2F2;
   background-image: url(../images/decor/close-button.svg);
-  background-repeat: no-repeat;
   background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
   cursor: pointer;
 }
 
@@ -1532,80 +1534,117 @@ ul.pagination {
 }
 
 .modal-form {
-  height: 50px;
-  font-weight: 700;
+  display: flex;
+  min-height: 50px;
   font-size: 20px;
-  line-height: 26px
+  font-weight: 700;
+  line-height: 26px;
+}
+
+.odal-form-appointment {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  Width: 575px;
 }
 
 .modal-form-departure {
-  Width: 575px;
-  height: 50px;
-  justify-content: space-between;
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  Width: 575px;
 }
 
 .modal-date {
-width: 420px;
-Height: 50px;
+min-width: 382px;
+padding: 15px 19px 14px 19px;
 border: none;
-padding: 0;
 background-color: #F2F2F2;
+font-family: inherit;
+font-size: 18px;
+line-height: 21px;
+text-align: left;
+max-Height: 50px;
+border-radius: 4px;
 }
 
 .modal-form {
-  margin-bottom: 40px;
-  align-items: center;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
 }
 
 .modal-settings-area {
   display: flex;
-  height: 50px;
-  margin-bottom: 40px;
   justify-content: space-between;
+  min-height: 50px;
 }
 
 .modal-settings {
   display: flex;
   width: 133px;
-  height: 50px;
+  min-height: 50px;
+}
+
+.modal-settings:last-of-type {
+  margin-left: 20px;
 }
 
 .modal-form-adults {
   display: flex;
+  min-width: 288px;
 }
 
 .modal-form-childrens {
   display: flex;
+  justify-content: end;
+  min-width: 230px;
+  margin-left: 20px;
 }
 
 .modal-childrens-count {
   width: 33px;
   height: 50px;
-  border: none;
   padding: 0;
+  border: none;
+  background-color: #F2F2F2;
+  text-align: center;
 }
 
 .modal-adults-count {
   width: 33px;
   height: 50px;
-  border: none;
   padding: 0;
+  border: none;
+  background-color: #F2F2F2;
 }
 
 .modal-minus {
   width: 50px;
   height: 50px;
-  border: none;
   padding: none;
+  border: none;
+  border-radius: 4px 0 0 4px;
 }
 
 .modal-plus {
   width: 50px;
   height: 50px;
-  border: none;
   padding: none;
+  border: none;
+  border-radius: 0 4px 4px 0;
+}
+
+.modal-button {
+  padding: 12px 26px;
+  border: none;
+  background-color: var(--basic-button-blue);
+  color: var(--basic-white);
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+  border-radius: 10px;
 }
