@@ -1486,8 +1486,9 @@ ul.pagination {
   width: 575px;
   padding: 62px 70px 70px 70px;
   margin: auto;
+  margin-top: 396px;
   background-color: var(--basic-background-1);
-  border-radius: 50px;
+  border-radius: 30px;
 }
 
 .modal-title {
@@ -1501,8 +1502,8 @@ ul.pagination {
 
 .modal-close-button {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 53px;
+  right: 68px;
   width: 53px;
   height: 53px;
   padding: 0;
@@ -1587,10 +1588,6 @@ border-radius: 4px;
   min-height: 50px;
 }
 
-.modal-settings:last-of-type {
-  margin-left: 20px;
-}
-
 .modal-form-adults {
   display: flex;
   min-width: 288px;
@@ -1598,26 +1595,29 @@ border-radius: 4px;
 
 .modal-form-childrens {
   display: flex;
-  justify-content: end;
-  min-width: 230px;
-  margin-left: 20px;
 }
 
-.modal-childrens-count {
+.quantity {
   width: 33px;
   height: 50px;
   padding: 0;
   border: none;
   background-color: #F2F2F2;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 21px;
   text-align: center;
 }
 
-.modal-adults-count {
-  width: 33px;
-  height: 50px;
-  padding: 0;
-  border: none;
-  background-color: #F2F2F2;
+.quantity::-webkit-outer-spin-button,
+.quantity::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+  -moz-appearance: none;
+}
+
+.quantity[type=number] {
+  -moz-appearance: textfield;
 }
 
 .modal-minus {

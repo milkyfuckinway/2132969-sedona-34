@@ -159,24 +159,29 @@
         <section class="modal-content">
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
           <form class="modal-forms" action="https://echo.htmlacademy.ru/" method="post">
-            <label class="modal-form modal-form-appointment" for="appointment-date">Дата заезда:
-            <input class="modal-date modal-date-in" id="appointment-date" name="appointment-date" type="text" placeholder="27 апреля 2020" min="2022-06-26" required>
+            <label class="modal-form modal-form-appointment" for="appointment-date">Дата Заезда:
+            <input class="modal-date modal-date-in" id="appointment-date" name="appointment-date" type="text" value="27 апреля 2020" min="2022-06-26" required>
             </label>
-            <label class="modal-form modal-form-departure" for="departure-date">Дата выезда:
-            <input class="modal-date modal-date-out" id="departure-date" name="departure-date" type="text" placeholder="1 сентября 2021" min="2022-06-26" required>
+            <label class="modal-form modal-form-departure" for="departure-date">Дата Выезда:
+            <input class="modal-date modal-date-out" id="departure-date" name="departure-date" type="text" value="1 сентября 2021" min="2022-06-26" required>
             </label>
             <div class="modal-settings-area">
             <label class="modal-form modal-form-adults">Взрослые:
               <div class="modal-settings">
             <button class="modal-minus">-</button>
-            <input class="quantity modal-adults-count" for="1" name="adults" type="number">
+            <input class="quantity modal-adults-count" for="1" name="adults" value="2" type="number">
             <button class="modal-plus">+</button>
               </div>
             </label>
-            <label class="modal-form modal-form-childrens">Дети:
+            <span class="modal-tooltip">
+              <label class="modal-form modal-form-childrens">Дети:
+              <button class="tooltip-toggle" type="button">
+                <svg width="1" height="9" viewBox="0 0 1 9" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_33716_652)"><path d="M0 9H1L1 3H0L0 9Z" fill="white"/><path d="M1 0H0V1H1V0Z" fill="white"/></g><defs><clipPath id="clip0_33716_652"><rect width="1" height="9" fill="white"/></clipPath></defs></svg>
+            </button>
+            </span>
               <div class="modal-settings">
-            <button class="modal-minus">-</button>
-            <input class="quantity modal-childrens-count" for="1" name="childrens" type="number">
+            <button class="modal-minus modal-minus-childrens">-</button>
+            <input class="quantity modal-childrens-count" for="1" name="childrens" value="1" type="number">
             <button class="modal-plus">+</button>
               </div>
             </label>
