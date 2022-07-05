@@ -75,11 +75,12 @@ body {
   flex-direction: column;
   min-height: 100%;
   margin: 0;
-  background-color: var(--basic-white);
+  background-color:#E5E5E5;
   color: var(--basic-black);
   font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 }
 
 .navigation {
@@ -87,6 +88,7 @@ body {
   justify-content: space-between;
   width: 1200px;
   margin: 0 auto;
+  background-color: var(--basic-background-1);
 }
 
 .navigation-item {
@@ -272,17 +274,19 @@ body {
   padding-right: 371px;
   padding-bottom: 82px;
   padding-left: 371px;
-  margin: 0 0 63px 0;
+  margin: 0;
 }
 
 .slogan {
   background-color: var(--basic-white);
+  min-height: 282px;
 }
 
 .slogan-title {
   padding: 0;
-  margin-top: 0;
-  margin-bottom: 31px;
+  margin: 0 auto;
+  padding-top: 63px;
+  padding-bottom: 31px;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
@@ -291,15 +295,14 @@ body {
 }
 
 .slogan-description {
-  margin-top: 0;
-  margin-bottom: 90px;
+  margin: 0 auto;
   text-align: center;
 }
 
 .advantages {
   display: grid;
   grid-template-columns: 400px 400px 400px;
-  margin-bottom: 91px;
+  background-color: var(--basic-background-1);
 }
 
 .advantages-photo {
@@ -393,9 +396,14 @@ body {
   text-align: center;
 }
 
+.search-section {
+  background-color: var(--basic-background-1);
+  min-height: 417px;
+}
+
 .search {
   margin: 0 auto;
-  margin-bottom: 29px;
+  padding: 91px 0 29px 0;
   color: var(--basic-black);
   font-size: 30px;
   font-weight: 700;
@@ -887,7 +895,8 @@ body {
   Width: 1057px;
   min-Height: 49px;
   display: flex;
-  margin: 55px 71px 56px 72px;
+  padding: 55px 71px 56px 72px;
+  background-color: var(--basic-background-1);
 }
 
 .search-result-title {
@@ -965,9 +974,10 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 340px);
   column-gap: 18px;
-  padding: 0;
-  margin: 56px 71px 66px 73px;
+  margin: 0 auto;
+  padding: 0 71px 66px 73px;
   min-Height: 876px;
+  background-color: var(--basic-background-1);
 }
 
 .product-card {
@@ -1142,7 +1152,9 @@ body {
   display: flex;
   width: 1055px;
   border-bottom: 1px solid #e6e6e6;
-  margin: 0 auto 30px auto;
+  margin: 0 auto;
+  position: absolute;
+  transform: translatex(73px);
 }
 
 .pagination-area {
@@ -1150,7 +1162,8 @@ body {
   justify-content: space-between;
   width: 1056px;
   height: 60px;
-  margin: 0 71px 25px 73px;
+  padding: 30px 71px 25px 73px;
+  background-color: var(--basic-background-1);
 }
 
 .pagination-area-settings {
@@ -1242,8 +1255,8 @@ ul.pagination {
   width: 1060px;
   min-height: 50px;
   margin: 0 auto;
-  margin-top: 40px;
-  margin-bottom: 30px;
+  padding: 40px 70px 30px 70px;
+  background-color: var(--basic-background-1);
 }
 
 .footer-area {
