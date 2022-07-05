@@ -674,6 +674,19 @@ body {
   border-radius: 50%;
 }
 
+.control-mark:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.control-input:focus + .control-mark {
+  background-color: rgba(255, 255, 255, 0.6);
+  outline: 3px solid #83B3D3;
+}
+
+.control-mark:active {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
 .catalog-filter-form {
   display: flex;
   flex-wrap: wrap;
@@ -863,6 +876,22 @@ body {
   line-height: 20px;
   text-transform: uppercase;
   border-radius: 5px;
+}
+
+.button-filter-submit:hover{
+  background-color: var(--basic-button-blue-hover);
+}
+
+.button-filter-submit:focus {
+  background-color: var(--basic-button-blue-focus);
+}
+
+.button-filter-submit:active{
+  background-color: var(--basic-button-blue-active);
+}
+
+.button-filter-submit:disabled {
+  background-color: var(--basic-button-disabled);
 }
 
 .button-filter-reset {
