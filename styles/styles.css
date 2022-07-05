@@ -375,7 +375,7 @@ body {
 }
 
 .advantages-item:nth-child(10) {
-  background-color: var(--basicbackground-4);
+  background-color: var(--basic-background-4);
 }
 
 .advantages-item:nth-child(6n+2) {
@@ -1498,7 +1498,7 @@ ul.pagination {
   border-radius: 50%;
   background-color: #F2F2F2;
   border: none;
-  background-image: url(/images/decor/close-button.svg);
+  background-image: url(../images/decor/close-button.svg);
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
