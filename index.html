@@ -157,21 +157,31 @@
           <span class="visually-hidden">Закрыть</span>
         </button>
         <section class="modal-content">
-          <h2 class="modal-title">Личный кабинет</h2>
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
           <form class="modal-forms" action="https://echo.htmlacademy.ru/" method="post">
-            <label class="modal-form-one" for="appointment-date">Дата заезда:
-              <input class="modal-date-in" id="appointment-date" name="appointment-date" type="text" placeholder="27 апреля 2020" min="2022-06-26" required>
-              <label class="modal-form-one" for="departure-date">Дата выезда:
-                <input class="modal-date-in" id="departure-date" name="adeparture-date" type="text" placeholder="1 сентября 2021" min="2022-06-26" required>
-            <label class="modal-form-three">Взрослые
-              <button class="modal-adults-minus">-</button>
-              <input class="quantity modal-adults-count" data-max-count="20" name="adults" type="number">
-              <button class="modal-adults-plus">+</button>
-            <label class="modal-form-four">Дети
-              <button class="modal-children-minus">-</button>
-              <input class="quantity modal-children-count" for="1" name="childrens"  type="number">
-              <button class="modal-children-plus">+</button>
-              <button class="button modal-button" type="submit">Найти</button>
+            <label class="modal-form modal-form-arrival" for="appointment-date">Дата заезда:
+            <input class="modal-date modal-date-in" id="appointment-date" name="appointment-date" type="text" placeholder="27 апреля 2020" min="2022-06-26" required>
+            </label>
+            <label class="modal-form modal-form-departure" for="departure-date">Дата выезда:
+            <input class="modal-date modal-date-out" id="departure-date" name="departure-date" type="text" placeholder="1 сентября 2021" min="2022-06-26" required>
+            </label>
+            <div class="modal-settings-area">
+            <label class="modal-form modal-form-adults">Взрослые:
+              <div class="modal-settings">
+            <button class="modal-minus">-</button>
+            <input class="quantity modal-adults-count" for="1" name="adults" type="number">
+            <button class="modal-plus">+</button>
+              </div>
+            </label>
+            <label class="modal-form modal-form-childrens">Дети:
+              <div class="modal-settings">
+            <button class="modal-minus">-</button>
+            <input class="quantity modal-childrens-count" for="1" name="childrens" type="number">
+            <button class="modal-plus">+</button>
+              </div>
+            </label>
+            </div>
+            <button class="button modal-button" type="submit">Найти</button>
             </form>
         </section>
       </div>

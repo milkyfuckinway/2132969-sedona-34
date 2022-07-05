@@ -14,11 +14,11 @@
   font-display: swap;
 }
 
-/*
+
 * {
   outline: 0.25px solid var(--basic-red);
   outline-offset: -1px;
-} */
+}
 
 :root {
   --basic-background-1:#FFFFFF;
@@ -1484,8 +1484,17 @@ ul.pagination {
 .modal {
   position: relative;
   margin: auto;
-  padding: 70px;
   background-color: var(--basic-background-1);
+  padding: 62px 70px 70px 70px;
+}
+
+.modal-title {
+  font-size: 30px;
+  text-transform: uppercase;
+  line-height: 36px;
+  margin: 0;
+  margin-bottom: 63px;
+  max-width: 500px;
 }
 
 .modal-close-button {
@@ -1515,4 +1524,88 @@ ul.pagination {
 .modal-close-button:active {
   opacity: 30%;
   background-color: #aaaaaa;
+}
+
+.modal-forms {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-form {
+  height: 50px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px
+}
+
+.modal-form-departure {
+  Width: 575px;
+  height: 50px;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+
+.modal-date {
+width: 420px;
+Height: 50px;
+border: none;
+padding: 0;
+background-color: #F2F2F2;
+}
+
+.modal-form {
+  margin-bottom: 40px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-settings-area {
+  display: flex;
+  height: 50px;
+  margin-bottom: 40px;
+  justify-content: space-between;
+}
+
+.modal-settings {
+  display: flex;
+  width: 133px;
+  height: 50px;
+}
+
+.modal-form-adults {
+  display: flex;
+}
+
+.modal-form-childrens {
+  display: flex;
+}
+
+.modal-childrens-count {
+  width: 33px;
+  height: 50px;
+  border: none;
+  padding: 0;
+}
+
+.modal-adults-count {
+  width: 33px;
+  height: 50px;
+  border: none;
+  padding: 0;
+}
+
+.modal-minus {
+  width: 50px;
+  height: 50px;
+  border: none;
+  padding: none;
+}
+
+.modal-plus {
+  width: 50px;
+  height: 50px;
+  border: none;
+  padding: none;
 }
