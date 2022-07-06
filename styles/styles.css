@@ -1494,7 +1494,7 @@ ul.pagination {
 .modal-title {
   max-width: 500px;
   margin: 0;
-  margin-bottom: 63px;
+  margin-bottom: 62px;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
@@ -1502,17 +1502,17 @@ ul.pagination {
 
 .modal-form-title {
   display: flex;
+  align-items: center;
   min-height: 50px;
   font-size: 20px;
   font-weight: 700;
   line-height: 26px;
-  align-items: center;
 }
 
 .modal-form-row {
-  margin-bottom: 40px;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 40px;
 }
 
 .modal-close-button {
@@ -1537,6 +1537,7 @@ ul.pagination {
 
 .modal-close-button:focus {
   background-color: #E6E6E6;
+  outline: 3px solid #82B3D3;
 }
 
 .modal-close-button:active {
@@ -1557,10 +1558,23 @@ max-Height: 50px;
 border-radius: 4px;
 }
 
+.modal-date:hover {
+  background-color: #E6E6E6;
+}
+
+.modal-date:focus {
+  background-color: #E6E6E6;
+  outline: 3px solid #82B3D3;
+}
+
+.modal-date:active {
+  background-color: #ffffff;
+}
+
 .modal-settings-area {
   display: flex;
-  min-height: 50px;
   justify-content: space-between;
+  min-height: 50px;
 }
 
 .modal-settings-adults {
@@ -1604,20 +1618,76 @@ border-radius: 4px;
   -moz-appearance: textfield;
 }
 
-.modal-minus {
+.quantity:focus {
+  outline: none;
+}
+
+.modal-minus,
+.modal-plus {
+  position: relative;
+  display: block;
   width: 50px;
   height: 50px;
   padding: none;
   border: none;
+  background-color: #F2F2F2;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.modal-minus {
   border-radius: 4px 0 0 4px;
 }
 
 .modal-plus {
-  width: 50px;
-  height: 50px;
-  padding: none;
-  border: none;
   border-radius: 0 4px 4px 0;
+}
+
+.modal-minus:hover::after,
+.modal-plus:hover::after  {
+  opacity: 100%;
+}
+
+.modal-minus:focus,
+.modal-plus:focus,
+.modal-minus:focus::after,
+.modal-plus:focus::after  {
+  opacity: 100%;
+  outline: 3px solid #82B3D3;
+  border-radius: 3px;
+}
+
+.modal-minus:active::after,
+.modal-plus:active::after {
+  opacity: 20%;
+}
+
+.modal-minus::after {
+  content: "";
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url(../images/decor/minus.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 30%;
+}
+
+.modal-plus::after {
+  content: "";
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url(../images/decor/plus.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 30%;
 }
 
 .modal-button {
@@ -1635,14 +1705,14 @@ border-radius: 4px;
 }
 
 .tooltip-toggle {
-  border: none;
-  background-color: #83B3D3;
-  border-radius: 50%;
-  padding: 0;
-  margin: 0;
   display: block;
   width: 25px;
   height: 25px;
+  padding: 0;
+  border: none;
+  margin: 0;
+  background-color: #83B3D3;
+  border-radius: 50%;
 }
 
 .tooltip-icon {
@@ -1656,21 +1726,21 @@ border-radius: 4px;
 }
 
 .tooltip-text {
+  position: absolute;
+  z-index: 1;
+  right: 107px;
+  bottom: 23px;
+  display: none;
+  width: 216px;
+  min-height: 110px;
+  padding: 15px 18px 18px 22px;
   background-color: #242424;
   color: #ffffff;
   font-size: 16px;
-  line-height: 21px;
   font-weight: 400;
-  width: 216px;
-  min-height: 110px;
+  line-height: 21px;
   text-transform: none;
-  padding: 15px 18px 18px 22px;
   border-radius: 8px;
-  position: absolute;
-  bottom: 22px;
-  right: 107px;
-  z-index: 1;
-  display: none;
 }
 
 .tooltip-toggle:hover + .tooltip-text,
@@ -1686,13 +1756,13 @@ border-radius: 4px;
 
 .tooltip-text:after {
   content: "";
-  background-image: url(../images/decor/tooltip-arrow.svg);
-  width: 19px;
-  height: 9px;
   position:absolute;
+  right:0;
   bottom: 100%;
   left:0;
-  right:0;
-  margin-left: auto;
+  width: 19px;
+  height: 9px;
   margin-right: auto;
+  margin-left: auto;
+  background-image: url(../images/decor/tooltip-arrow.svg);
 }
