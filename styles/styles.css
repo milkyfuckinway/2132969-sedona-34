@@ -1738,7 +1738,7 @@ border-radius: 4px;
   margin: 0;
   background-color: #83B3D3;
   border-radius: 50%;
-  transform: translate(1px, 1px);
+  transform: translate(-1px, 1px);
 }
 
 .tooltip-icon {
@@ -1759,8 +1759,8 @@ border-radius: 4px;
 .tooltip-text {
   position: absolute;
   z-index: 1;
-  right: 36px;
-  bottom: -48px;
+  right: -115px;
+  top: 42px;
   display: none;
   width: 216px;
   min-height: 110px;
@@ -1785,6 +1785,7 @@ border-radius: 4px;
   height: 25px;
   margin-right: 18px;
   margin-left: 5px;
+  position: relative;
 }
 
 .tooltip-text:after {
