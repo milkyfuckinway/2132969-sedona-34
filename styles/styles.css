@@ -1818,3 +1818,7 @@ border-radius: 4px;
 .modal-forms {
   position: relative;
 }
+
+.modal-container-close {
+  display: none;
+}
