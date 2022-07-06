@@ -1587,9 +1587,9 @@ border-radius: 4px;
 }
 
 .modal-form-title-childrens {
-  margin-left:10px;
-  width: 143px;
   justify-content: end;
+  width: 143px;
+  margin-left:10px;
 }
 
 .modal-settings-childrens,
@@ -1779,8 +1779,8 @@ border-radius: 4px;
 .tooltip {
   width: 25px;
   height: 25px;
-  margin-left: 5px;
   margin-right: 18px;
+  margin-left: 5px;
 }
 
 .tooltip-text:after {
