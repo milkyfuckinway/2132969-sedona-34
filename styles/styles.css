@@ -1747,8 +1747,8 @@ border-radius: 4px;
 .tooltip-text {
   position: absolute;
   z-index: 1;
-  right: 107px;
-  bottom: 23px;
+  right: 36px;
+  bottom: -48px;
   display: none;
   width: 216px;
   min-height: 110px;
@@ -1784,4 +1784,27 @@ border-radius: 4px;
   margin-right: auto;
   margin-left: auto;
   background-image: url(../images/decor/tooltip-arrow.svg);
+}
+
+.modal-error {
+  position: absolute;
+  top: 60px;
+  left: 155px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #FF5757;
+}
+
+.modal-date-available {
+  position: absolute;
+  top: 150px;
+  left: 155px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.modal-forms {
+  position: relative;
 }

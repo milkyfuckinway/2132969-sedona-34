@@ -161,10 +161,12 @@
           <form class="modal-forms" action="https://echo.htmlacademy.ru/" method="post">
             <label class="modal-form-title modal-form-row" for="appointment-date">Дата Заезда:
             <input class="modal-date" id="appointment-date" name="appointment-date" type="text" value="27 апреля 2020" min="2022-06-26" required>
+            <span class="modal-error">Мы не можем отправить вас в прошлое.</span>
             </label>
             <label class="modal-form-title modal-form-row" for="departure-date">Дата Выезда:
             <input class="modal-date" id="departure-date" name="departure-date" type="text" value="1 сентября 2021" min="2022-06-26" required>
-            </label>
+            <span class="modal-date-available">На эти даты есть свободные номера. Пока есть.</span>
+           </label>
             <div class="modal-settings-area modal-form-row">
             <label class="modal-form-title">Взрослые:
               <div class="modal-settings-adults">
