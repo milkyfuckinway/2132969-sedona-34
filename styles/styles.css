@@ -46,11 +46,11 @@
   --basic-opacity-pseudo-blue: #3F5E72;
   --basic-white-opacity-60:rgba(255, 255, 255, 0.6);
   --basic-white-opacity-30:rgba(255, 255, 255, 0.3);
-  --basic-black-opacity-15:rgba(255, 255, 255, 0.15);
-  --basic-black-opacity-20:rgba(255, 255, 255, 0.2);
-  --basic-black-opacity-25:rgba(255, 255, 255, 0.25);
-  --basic-black-opacity-30:rgba(255, 255, 255, 0.3);
-  --basic-black-opacity-40:rgba(255, 255, 255, 0.4);
+  --basic-black-opacity-15:rgba(0, 0, 0, 0.15);
+  --basic-black-opacity-20:rgba(0, 0, 0, 0.2);
+  --basic-black-opacity-25:rgba(0, 0, 0, 0.25);
+  --basic-black-opacity-30:rgba(0, 0, 0, 0.3);
+  --basic-black-opacity-40:rgba(0, 0, 0, 0.4);
 }
 
 .visually-hidden {
