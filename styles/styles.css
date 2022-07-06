@@ -1704,6 +1704,20 @@ border-radius: 4px;
   border-radius: 10px;
 }
 
+.modal-button:hover {
+  background-color: #68A2CA;
+}
+
+.modal-button:focus {
+  background-color: #68A2CA;
+  outline: 3px solid #756257;
+}
+
+.modal-button:active {
+  background-color: #68A2CA;
+  color: #95beda;
+}
+
 .tooltip-toggle {
   display: block;
   width: 25px;
@@ -1723,6 +1737,11 @@ border-radius: 4px;
 
 .tooltip-toggle:hover {
   background-color: #68A2CA;
+}
+
+.tooltip-toggle:focus {
+  background-color: #68A2CA;
+  outline: none;
 }
 
 .tooltip-text {
