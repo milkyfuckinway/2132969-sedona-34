@@ -932,6 +932,7 @@ body {
 
 .button-filter-submit:focus {
   background-color: var(--basic-button-blue-focus);
+  outline: none;
 }
 
 .button-filter-submit:active{
@@ -1326,7 +1327,8 @@ ul.pagination {
 
 .pagination-link:focus {
   background-color: #68A2CA;
-  outline: 1px solid #82B3D3;
+  outline: none;
+  box-shadow: 0 0 0 1px #82B3D3;
 }
 
 .pagination-link:active {
