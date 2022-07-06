@@ -103,10 +103,6 @@ body {
 	background-color: var(--basic-background-1);
 }
 
-.navigation-item {
-	height: 65px;
-}
-
 .navigation-logo {
 	position: absolute;
 	z-index: 100;
@@ -153,7 +149,7 @@ body {
 	display: block;
 	min-width: 26px;
 	min-height: 26px;
-	padding: 20px 17px 19px 17px;
+	padding: 20px 17px 20px 17px;
 	margin: 0;
 	color: var(--basic-black);
 	font-size: 20px;
@@ -673,6 +669,7 @@ body {
 	font-size: 20px;
 	font-weight: 700;
 	line-height: 26px;
+	max-width: 280px;
 }
 
 .control-input[type="checkbox"]:checked+.control-mark::before {
@@ -1018,6 +1015,7 @@ body {
 	font-size: 18px;
 	line-height: 21px;
 	border-radius: 4px;
+	Width: 290px;
 	appearance: none;
 }
 
@@ -1305,8 +1303,8 @@ ul.pagination {
 }
 
 .pagination-item {
-	width: 60px;
-	height: 60px;
+	min-width: 60px;
+	min-height: 60px;
 	margin-top: 8px;
 	margin-right: 8px;
 	font-size: 20px;
@@ -1384,6 +1382,7 @@ ul.pagination {
 	line-height: 21px;
 	appearance: none;
 	border-radius: 4px;
+	width: 160px;
 }
 
 .count-of-items-shown:hover {
