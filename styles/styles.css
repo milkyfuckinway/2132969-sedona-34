@@ -1322,13 +1322,14 @@ ul.pagination {
 
 .pagination-link:hover {
   background-color: #68A2CA;
-  outline: 1px solid #82B3D3;
+  outline: none;
+  box-shadow: inset 0 0 0 1px #82B3D3;
 }
 
 .pagination-link:focus {
   background-color: #68A2CA;
   outline: none;
-  box-shadow: 0 0 0 1px #82B3D3;
+  box-shadow: inset 0 0 0 1px #82B3D3;
 }
 
 .pagination-link:active {
