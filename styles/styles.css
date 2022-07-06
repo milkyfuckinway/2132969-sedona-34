@@ -1581,12 +1581,15 @@ border-radius: 4px;
   min-height: 50px;
 }
 
-.modal-settings-adults {
-  margin-left: 64px;
+.modal-form-title-adults{
+  width: 145px;
+  margin-right: 10px;
 }
 
-.modal-settings-childrens {
-  margin-left: 20px;
+.modal-form-title-childrens {
+  margin-left:10px;
+  width: 143px;
+  justify-content: end;
 }
 
 .modal-settings-childrens,
@@ -1776,7 +1779,8 @@ border-radius: 4px;
 .tooltip {
   width: 25px;
   height: 25px;
-  margin-left: 5px
+  margin-left: 5px;
+  margin-right: 18px;
 }
 
 .tooltip-text:after {
