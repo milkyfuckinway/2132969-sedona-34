@@ -1489,6 +1489,7 @@ ul.pagination {
   margin-top: 396px;
   background-color: var(--basic-background-1);
   border-radius: 30px;
+  box-shadow: 0 25px 50px 0 rgba(0, 0, 0, 0.15);
 }
 
 .modal-title {
@@ -1517,8 +1518,8 @@ ul.pagination {
 
 .modal-close-button {
   position: absolute;
-  top: 53px;
-  right: 68px;
+  top: 54px;
+  right: 70px;
   width: 53px;
   height: 53px;
   padding: 0;
@@ -1556,6 +1557,9 @@ line-height: 21px;
 text-align: left;
 max-Height: 50px;
 border-radius: 4px;
+background-image: url(../images/decor/date.svg);
+background-position: right 19px center;
+background-repeat: no-repeat;
 }
 
 .modal-date:hover {
@@ -1727,6 +1731,7 @@ border-radius: 4px;
   margin: 0;
   background-color: #83B3D3;
   border-radius: 50%;
+  transform: translate(1px, 1px);
 }
 
 .tooltip-icon {
@@ -1760,6 +1765,7 @@ border-radius: 4px;
   line-height: 21px;
   text-transform: none;
   border-radius: 8px;
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.3);
 }
 
 .tooltip-toggle:hover + .tooltip-text,
