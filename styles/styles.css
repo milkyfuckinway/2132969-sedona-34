@@ -387,7 +387,7 @@ body {
 }
 
 .advantages-item:nth-child(5) {
-	background-color: var(--basic-white)
+	background-color: var(--basic-white);
 }
 
 .advantages-item:nth-child(10) {
@@ -870,14 +870,14 @@ body {
 .range-input-left {
 	border-radius: 4px 0 0 4px;
 	padding: 0 40px 0 16px;
-	border: 2px solid var(--basic-white)
+	border: 2px solid var(--basic-white);
 }
 
 .range-input-right {
 	padding: 0 40px 0 16px;
 	border: 2px solid var(--basic-white);
 	margin-left: -2px;
-	border-radius: 0 4px 4px 0
+	border-radius: 0 4px 4px 0;
 }
 
 .range-input:hover {
@@ -971,11 +971,11 @@ body {
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 20px;
-	border-radius: 4px
+	border-radius: 4px;
 }
 
 .button-filter-reset:hover {
-	color: var(--basic-white-opacity-60)
+	color: var(--basic-white-opacity-60);
 }
 
 .button-filter-reset:focus {
@@ -983,7 +983,7 @@ body {
 }
 
 .button-filter-reset:active {
-	color: var(--basic-white-opacity-30)
+	color: var(--basic-white-opacity-30);
 }
 
 .search-result-area {
@@ -992,7 +992,7 @@ body {
 	padding: 55px 71px 56px 72px;
 	background-color: var(--basic-background-1);
 	Width: 1057px;
-	min-Height: 49px
+	min-Height: 49px;
 }
 
 .search-result-title {
@@ -1433,7 +1433,7 @@ ul.pagination {
 	align-items: center;
 	min-width: 48px;
 	min-height: 40px;
-	fill: var(--basic-button-blue)
+	fill: var(--basic-button-blue);
 }
 
 .footer-social-button:hover {
