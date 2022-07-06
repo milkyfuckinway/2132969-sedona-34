@@ -1551,15 +1551,15 @@ min-width: 382px;
 padding: 15px 19px 14px 19px;
 border: none;
 background-color: #F2F2F2;
+background-image: url(../images/decor/date.svg);
+background-position: right 19px center;
+background-repeat: no-repeat;
 font-family: inherit;
 font-size: 18px;
 line-height: 21px;
 text-align: left;
 max-Height: 50px;
 border-radius: 4px;
-background-image: url(../images/decor/date.svg);
-background-position: right 19px center;
-background-repeat: no-repeat;
 }
 
 .modal-date:hover {
@@ -1796,18 +1796,18 @@ background-repeat: no-repeat;
   position: absolute;
   top: 60px;
   left: 155px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 21px;
   color: #FF5757;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
 }
 
 .modal-date-available {
   position: absolute;
   top: 150px;
   left: 155px;
-  font-weight: 400;
   font-size: 16px;
+  font-weight: 400;
   line-height: 21px;
 }
 
