@@ -410,7 +410,7 @@ body {
 }
 
 .advantages-description {
-	width: 230px;
+	min-width: 230px;
 	margin: 0 auto;
 	font-size: 18px;
 	line-height: 21px;
