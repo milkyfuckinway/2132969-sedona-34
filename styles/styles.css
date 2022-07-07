@@ -1228,6 +1228,7 @@ body {
 	text-decoration: none;
 	text-transform: uppercase;
 	border-radius: 4px;
+	cursor: pointer;
 }
 
 .product-card-button-favorite:hover {
@@ -1260,6 +1261,7 @@ body {
 	text-decoration: none;
 	text-transform: uppercase;
 	border-radius: 4px;
+	cursor: pointer;
 }
 
 .product-card-button-favorite-active:hover {
