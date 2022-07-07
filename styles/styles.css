@@ -1714,6 +1714,7 @@ ul.pagination {
 	background-color: var(--basic-light-gray);
 	background-position: center;
 	background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 .modal-minus {
@@ -1783,6 +1784,7 @@ ul.pagination {
 	line-height: 36px;
 	text-transform: uppercase;
 	border-radius: 10px;
+  cursor: pointer;
 }
 
 .error {
