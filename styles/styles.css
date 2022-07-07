@@ -422,12 +422,12 @@ body {
 }
 
 .search-section {
-	min-height: 417px;
+	min-height: 416px;
 	background-color: var(--basic-background-1);
 }
 
 .search {
-	padding: 91px 0 29px 0;
+	padding: 90px 0 29px 0;
 	margin: 0 auto;
 	color: var(--basic-black);
 	font-size: 30px;
@@ -1735,6 +1735,10 @@ ul.pagination {
 	line-height: 36px;
 	text-transform: uppercase;
 	border-radius: 10px;
+}
+
+.error {
+  color: var(--basic-error);
 }
 
 .modal-button:hover {

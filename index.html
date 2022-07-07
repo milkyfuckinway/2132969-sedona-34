@@ -168,7 +168,7 @@
     </footer>
     <div class="modal-container modal-container-close">
       <div class="modal modal-auth">
-        <button class="modal-close-button">
+        <button type="button" class="modal-close-button">
         <span class="visually-hidden">Закрыть</span>
         </button>
         <section class="modal-content">
@@ -176,7 +176,7 @@
           <form class="modal-forms" action="https://echo.htmlacademy.ru/" method="post">
             <label class="modal-form-title modal-form-row" for="appointment-date">Дата Заезда:
             <input class="modal-date" id="appointment-date" name="appointment-date" type="text" value="27 апреля 2020" pattern="2022-06-26" required>
-            <span class="modal-error">Мы не можем отправить вас в прошлое.</span>
+            <span class="modal-error error">Мы не можем отправить вас в прошлое.</span>
             </label>
             <label class="modal-form-title modal-form-row" for="departure-date">Дата Выезда:
             <input class="modal-date" id="departure-date" name="departure-date" type="text" value="1 сентября 2021" pattern="2022-06-26" required>
@@ -186,9 +186,9 @@
               <label class="modal-form-title modal-form-title-adults">Взрослые:
               </label>
               <div class="modal-settings-adults">
-                <button class="modal-minus"></button>
+                <button type="button" class="modal-minus modal-minus-adults"></button>
                 <input class="quantity modal-adults-count" name="adults" value="2" type="number">
-                <button class="modal-plus"></button>
+                <button type="button" class="modal-plus modal-plus-adults"></button>
               </div>
               <span class="modal-childrens-position">
                 <span class="form-label form-label-icon">
@@ -212,9 +212,9 @@
                   </label>
                 </span>
                 <span class="modal-settings-childrens">
-                <button class="modal-minus modal-minus-childrens"></button>
+                <button type="button" class="modal-minus modal-minus-childrens"></button>
                 <input class="quantity modal-childrens-count" name="childrens" value="1" type="number">
-                <button class="modal-plus"></button>
+                <button type="button" class="modal-plus modal-plus-childrens"></button>
                 </span>
               </span>
             </div>
