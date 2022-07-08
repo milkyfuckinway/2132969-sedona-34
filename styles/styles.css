@@ -772,11 +772,13 @@ body {
 
 .control {
 	position: relative;
+	width: max-content;
 	margin-bottom: 15px;
 	margin-left: 40px;
 	font-size: 18px;
 	line-height: 21px;
 	cursor: pointer;
+	max-width: 120px;
 }
 
 .control:last-child {
@@ -1246,6 +1248,7 @@ body {
 
 .product-card-button-favorite:disabled {
 	background-color: var(--basic-button-disabled);
+  cursor: default;
 }
 
 .product-card-button-favorite-active {
