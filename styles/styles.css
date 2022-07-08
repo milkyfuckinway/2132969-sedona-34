@@ -686,7 +686,7 @@ body {
 	line-height: 26px;
 }
 
-.control-input[type = "checkbox"]:checked + .control-mark::before {
+.control-input[type="checkbox"]:checked + .control-mark::before {
 	content: "";
 	position: absolute;
 	display: block;
@@ -699,11 +699,11 @@ body {
 	background-repeat: no-repeat;
 }
 
-.control-input[type = "radio"] + .control-mark {
+.control-input[type="radio"] + .control-mark {
 	border-radius: 50%;
 }
 
-.control-input[type = "radio"]:checked + .control-mark::before {
+.control-input[type="radio"]:checked + .control-mark::before {
 	content: "";
 	position: absolute;
 	top: 5px;
@@ -859,7 +859,7 @@ body {
 	-moz-appearance: none;
 }
 
-.range-input[type = number] {
+.range-input[type="number"] {
 	-moz-appearance: textfield;
 }
 
@@ -1697,7 +1697,7 @@ ul.pagination {
 	-moz-appearance: none;
 }
 
-.quantity[type = number] {
+.quantity[type="number"] {
 	-moz-appearance: textfield;
 }
 
@@ -1711,12 +1711,12 @@ ul.pagination {
 	display: block;
 	width: 50px;
 	height: 50px;
-	padding: none;
+	padding: 0;
 	border: none;
 	background-color: var(--basic-light-gray);
 	background-position: center;
 	background-repeat: no-repeat;
-  cursor: pointer;
+ 	cursor: pointer;
 }
 
 .modal-minus {
@@ -1786,7 +1786,7 @@ ul.pagination {
 	line-height: 36px;
 	text-transform: uppercase;
 	border-radius: 10px;
-  cursor: pointer;
+    cursor: pointer;
 }
 
 .error {
