@@ -176,25 +176,25 @@
         <section class="modal-content">
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
           <form class="modal-forms" action="https://echo.htmlacademy.ru/" method="post">
-            <label class="modal-form-title modal-form-row" for="appointment-date">Дата Заезда:
-            <input class="modal-date" id="appointment-date" name="appointment-date" type="text" placeholder="27 апреля 2020" required>
-            <span class="modal-error error">Мы не можем отправить вас в прошлое.</span>
+            <label class="modal-form-title modal-form-row">Дата Заезда:
+              <input class="modal-date" name="appointment-date" type="text" placeholder="27 апреля 2020" required>
+              <span class="modal-error error">Мы не можем отправить вас в прошлое.</span>
             </label>
-            <label class="modal-form-title modal-form-row" for="departure-date">Дата Выезда:
-            <input class="modal-date" id="departure-date" name="departure-date" type="text" placeholder="1 сентября 2021" required>
-            <span class="modal-date-available">На эти даты есть свободные номера. Пока есть.</span>
+            <label class="modal-form-title modal-form-row">Дата Выезда:
+              <input class="modal-date" name="departure-date" type="text" placeholder="1 сентября 2021" required>
+              <span class="modal-date-available">На эти даты есть свободные номера. Пока есть.</span>
             </label>
             <div class="modal-settings-area modal-form-row">
-              <label class="modal-form-title modal-form-title-adults">Взрослые:
+              <label class="modal-form-title modal-form-title-adults" for="modal-adults">Взрослые:
               </label>
               <div class="modal-settings-adults">
                 <button class="modal-minus modal-minus-adults" type="button" aria-label="Уменьшить количество взрослых."></button>
-                <input class="quantity modal-adults-count" name="adults" type="number" value="2" min="1" required>
+                <input class="quantity modal-adults-count" id="modal-adults" name="adults" type="number" value="2" min="1" required>
                 <button class="modal-plus modal-plus-adults" type="button" aria-label="Увеличить количество взрослых."></button>
               </div>
               <span class="modal-childrens-position">
                 <span class="form-label form-label-icon">
-                  <label class="modal-form-title modal-form-title-childrens">Дети:
+                  <label class="modal-form-title modal-form-title-childrens" for="modal-childrens">Дети:
                     <span class="tooltip">
                       <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label">
                         <svg class="tooltip-icon" role="img" aria-hidden="true" focusable="false" width="1" height="9" viewbox="0 0 1 9" xmlns="http://www.w3.org/2000/svg">
@@ -215,7 +215,7 @@
                 </span>
                 <span class="modal-settings-childrens">
                 <button class="modal-minus modal-minus-childrens" type="button" aria-label="Уменьшить количество детей."></button>
-                <input class="quantity modal-childrens-count" name="childrens" type="number" value="1" min="0">
+                <input class="quantity modal-childrens-count" id="modal-childrens" name="childrens" type="number" value="1" min="0">
                 <button class="modal-plus modal-plus-childrens" type="button" aria-label="Увеличить количество детей."></button>
                 </span>
               </span>

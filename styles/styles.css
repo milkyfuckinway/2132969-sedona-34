@@ -1584,11 +1584,11 @@ ul.pagination {
 }
 
 .modal-form-row {
+  position: relative;
   justify-content: space-between;
   align-items: center;
   margin-top: 40px;
   margin-bottom: 40px;
-  position: relative;
 }
 
 .modal-close-button {
