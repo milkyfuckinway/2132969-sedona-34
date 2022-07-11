@@ -1664,13 +1664,23 @@ ul.pagination {
 
 .modal-form-title-childrens {
   justify-content: end;
-  width: 143px;
+  width: 90px;
   margin-left: 10px;
 }
 
 .modal-settings-childrens,
 .modal-settings-adults {
   display: flex;
+}
+
+.modal-childrens {
+  display: flex;
+}
+
+.form-label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .modal-childrens-position {
@@ -1897,6 +1907,6 @@ ul.pagination {
   line-height: 21px;
 }
 
-.modal-container-close {
+/* .modal-container-close {
   display: none;
-}
+} */
